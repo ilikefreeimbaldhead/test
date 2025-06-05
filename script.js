@@ -26,6 +26,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedDateString = ''; // 현재 선택된 날짜 (YYYY-MM-DD 형식)
     let selectedEventIndex = -1; // 선택된 날짜에 여러 이벤트가 있을 경우를 대비 (지금은 사용 안 함)
 
+    const keywordColors = {
+        '국어': 'blue',     // 파란색
+        '영어': 'skyblue',  // 하늘색
+        '수학': 'orange',   // 주황색
+        '과학': 'green',    // 초록색
+        '음악': 'pink',     // 분홍색
+        '물리학': 'yellowgreen', // 연두색
+        '중국어': 'red',    // 빨간색
+        '국사': 'gold'      // 황색
+    };
 
     // 달력 렌더링 함수
     function renderCalendar() {
