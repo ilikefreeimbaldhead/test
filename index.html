@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 수행평가 캘린더</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>2025 수행평가 캘린더</h1>
+
+        <div class="calendar-header">
+            <button id="prevMonth">&lt;</button>
+            <h2 id="currentMonthYear"></h2>
+            <button id="nextMonth">&gt;</button>
+        </div>
+
+        <div class="calendar">
+            <div class="weekdays">
+                <div>일</div>
+                <div>월</div>
+                <div>화</div>
+                <div>수</div>
+                <div>목</div>
+                <div>금</div>
+                <div>토</div>
+            </div>
+            <div class="days" id="calendarDays">
+                </div>
+        </div>
+
+        <div class="event-input-section">
+            <h2>수행평가 추가/수정</h2>
+            <p>선택된 날짜: <span id="selectedDateDisplay">날짜를 선택해주세요.</span></p>
+            <input type="date" id="eventDate" disabled>
+            <input type="text" id="eventName" placeholder="수행평가 제목">
+            <textarea id="eventDescription" placeholder="수행평가 내용 (예: 국어 수행평가 - 독서 감상문)"></textarea>
+            <button id="addEventBtn">수행평가 추가</button>
+            <button id="deleteEventBtn" class="hidden">수행평가 삭제</button>
+        </div>
+
+        <div class="events-list">
+            <h2>수행평가 목록 및 D-Day</h2>
+            <ul id="eventsList">
+                </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
